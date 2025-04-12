@@ -26,7 +26,7 @@ Install dependencies:
     pip install openpyxl
 ```
 
-##⚙️ Configuration
+## ⚙️ Configuration
 Edit these variables in main.py:
 
     snowflake_user = 'your_email'
@@ -37,7 +37,7 @@ Edit these variables in main.py:
     snowflake_schema = 'your_schema'
     snowflake_role = 'your_role'
 
-##📦 How to Run
+## 📦 How to Run
 Place your input file (data.xlsx) and optional query.sql in the working directory.
 
   1. Run the script:
@@ -47,13 +47,13 @@ Place your input file (data.xlsx) and optional query.sql in the working director
   2. Choose whether to run the default matching logic or use a custom query.
   3. Output is saved to output.xlsx.
 
-##🧠 Matching Logic (Default)
-    If no custom SQL is provided, the script uses default fuzzy matching logic using:
+## 🧠 Matching Logic (Default)
+   If no custom SQL is provided, the script uses default fuzzy matching logic using:
     
       First Name similarity
       Last Name similarity
       Address Line 1 similarity
       State similarity
       
-  It uses JAROWINKLER_SIMILARITY to compute string similarity in SQL.
+   It uses JAROWINKLER_SIMILARITY to compute string similarity in SQL.
    
